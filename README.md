@@ -2,9 +2,9 @@
 
 ## Feature
 
-- Adapt WCDB to work with the latest version of Room
+- Adapt [WCDB](https://github.com/Tencent/wcdb/tree/room) to work with the latest version of Room
 - Include support for the @Upsert annotation
-- Ensure compatibility with the latest version of SQLCipher
+- Ensure compatibility with the latest version of [SQLCipher](https://github.com/sqlcipher/sqlcipher-android)
 
 ## Usage
 
@@ -50,4 +50,14 @@ For `*.kts` :
 dependencies {
     implementation("com.github.ysy950803:WCDBRoomX:1.0.0")
 }
+```
+
+### Sample
+
+See [app/src/main/java/com/ysy/wcdbroomx/AppDatabase.kt](https://github.com/ysy950803/WCDBRoomX/blob/main/app/src/main/java/com/ysy/wcdbroomx/AppDatabase.kt)
+
+```kotlin
+Room.databaseBuilder(...)
+    .openHelperFactory(WCDBRoomX.createOpenHelperFactory("db_password"))
+    .build()
 ```
