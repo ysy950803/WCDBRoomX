@@ -56,6 +56,22 @@ dependencies {
 
 See [app/src/main/java/com/ysy/wcdbroomx/AppDatabase.kt](https://github.com/ysy950803/WCDBRoomX/blob/main/app/src/main/java/com/ysy/wcdbroomx/AppDatabase.kt)
 
+WCDBRoomX does not include the Room library. You should add the dependency of Room by yourself:
+
+```kotlin
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+}
+
+val roomVersion = "2.6.1"
+kapt("androidx.room:room-compiler:$roomVersion")
+implementation("androidx.room:room-ktx:$roomVersion")
+```
+
+So easy to use WCDB with Room:
+
 ```kotlin
 Room.databaseBuilder(...)
     .openHelperFactory(WCDBRoomX.createOpenHelperFactory("db_password"))
