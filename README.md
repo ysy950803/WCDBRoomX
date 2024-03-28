@@ -37,7 +37,15 @@ dependencyResolutionManagement {
 
 **Step 2.** Add the dependency
 
-Add it in your app `build.gradle` :
+These dependencies are no longer needed:
+
+```
+//    implementation("androidx.sqlite:sqlite-ktx:2.4.0")
+//    implementation("net.zetetic:sqlcipher-android:4.5.6@aar")
+//    implementation("com.tencent.wcdb:wcdb-android:1.1-19")
+```
+
+Just add WCDBRoomX in your app `build.gradle` :
 
 ```groovy
 dependencies {
