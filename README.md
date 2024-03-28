@@ -5,6 +5,7 @@
 - Adapt [WCDB](https://github.com/Tencent/wcdb/tree/room) to work with the latest version of Room
 - Include support for the @Upsert annotation
 - Ensure compatibility with the latest version of [SQLCipher](https://github.com/sqlcipher/sqlcipher-android)
+- Migrate dependencies to AndroidX
 
 ## Usage
 
