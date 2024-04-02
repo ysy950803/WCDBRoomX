@@ -54,7 +54,7 @@ afterEvaluate {
 
                 groupId = "com.github.ysy950803"
                 artifactId = "WCDBRoomX"
-                version = "1.0.0"
+                version = "1.0.1"
             }
         }
     }
