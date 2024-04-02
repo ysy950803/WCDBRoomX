@@ -49,7 +49,7 @@ Just add WCDBRoomX in your app `build.gradle` :
 
 ```groovy
 dependencies {
-    implementation 'com.github.ysy950803:WCDBRoomX:1.0.0'
+    implementation 'com.github.ysy950803:WCDBRoomX:1.0.1'
 }
 ```
 
@@ -57,7 +57,7 @@ For `*.kts` :
 
 ```kotlin
 dependencies {
-    implementation("com.github.ysy950803:WCDBRoomX:1.0.0")
+    implementation("com.github.ysy950803:WCDBRoomX:1.0.1")
 }
 ```
 
@@ -71,11 +71,11 @@ WCDBRoomX does not include the Room library. You should add the dependency of Ro
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
 }
 
 val roomVersion = "2.6.1"
-kapt("androidx.room:room-compiler:$roomVersion")
+ksp("androidx.room:room-compiler:$roomVersion")
 implementation("androidx.room:room-ktx:$roomVersion")
 ```
 
