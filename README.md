@@ -49,7 +49,7 @@ Just add WCDBRoomX in your app `build.gradle` :
 
 ```groovy
 dependencies {
-    implementation 'com.github.ysy950803:WCDBRoomX:1.0.1'
+    implementation 'com.github.ysy950803:WCDBRoomX:1.0.2'
 }
 ```
 
@@ -57,7 +57,7 @@ For `*.kts` :
 
 ```kotlin
 dependencies {
-    implementation("com.github.ysy950803:WCDBRoomX:1.0.1")
+    implementation("com.github.ysy950803:WCDBRoomX:1.0.2")
 }
 ```
 
