@@ -1,4 +1,6 @@
-# WCDBRoomX
+# [Deprecated]WCDBRoomX
+
+> Based on our tests, the latest version of sqlcipher-android now outperforms WCDB 1.x. Therefore, we're no longer updating this project. We encourage you to switch over to the native SQLCipher.
 
 ## Feature
 
